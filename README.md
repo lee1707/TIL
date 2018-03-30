@@ -1,8 +1,8 @@
 # TIL
-Today I learned something 
+Today I learned
 
 JSP & Servlet 
-========
+---------
 **March, 2018**
 
 28. create taglib-in-tomcat-9
