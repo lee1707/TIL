@@ -9,7 +9,7 @@ I learned filter and wrppaer
 By practicing example page, I found Error.
 
 
-#Error
+Error
 ===========
 My Tomcat 9.0 doesn't show its stdout log.
 It shows only localhost access log like this.
@@ -45,14 +45,16 @@ log4j.appender.stdout.layout.ConversionPattern=%d{dd-MM-yy HH:mm:ss:SSS}-{%p}%c{
 ```
 
 
+
 also, I restarted Tomcat and Web brower.
 
 But I still can't find stdout message.
 
-So I asked Junyoung(newt), He taught me that my eclipse is getting message from tomcat.
+=> I asked Junyoung(newt), He taught me that my eclipse is getting message from tomcat.
 
 
-#solution
+
+solution
 ===========
 -change log directory from eclipse 
 
