@@ -1,8 +1,11 @@
 # TIL
-Today I learned
+Today I learned something
 
-JSP & Servlet 
----------
+Happy coding.
+
+***
+
+# JSP & Servlet 
 **March, 2018**
 
 - 28th [create taglib-in-tomcat-9](https://github.com/lee1707/TIL/blob/master/java/web/taglib-in-tomcat-9.md)
