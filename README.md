@@ -1,7 +1,7 @@
 # TIL
-Today I learned something
+**Today I learned**
 
-Happy coding.
+Keep calm and carry on coding
 
 ***
 
