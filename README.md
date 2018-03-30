@@ -1,5 +1,5 @@
 # TIL
-Today I learned 
+Today I learned something 
 
 JSP & Servlet 
 ========
