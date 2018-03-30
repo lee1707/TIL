@@ -27,14 +27,16 @@ It shows only localhost access log like this.
 
 So I googled for solution.
 
+***
 
 There were some people using log4j for logging.
 I downloaded log4j.jar on C:\Users\gramgram\Downloads\apache-tomcat-9.0.5\apache-tomcat-9.0.5\webapps\brain11\WEB-INF\lib
 and made log4j.properties file on C:\Users\gramgram\Downloads\apache-tomcat-9.0.5\apache-tomcat-9.0.5\webapps\brain11\WEB-INF\classes
 
 
+I tried 
+===========
 **log4j.properties**
-
 
 ```
 log4j.rootLogger=DEBUG, stdout, TOMCAT
@@ -54,7 +56,7 @@ But I still can't find stdout message.
 
 
 
-solution
+solution(work)
 ===========
 -change log directory from eclipse 
 
