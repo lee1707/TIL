@@ -1,7 +1,7 @@
 # TIL
 **Today I learned**
 
-Hello world!
+Hello github!
 
 ***
 
