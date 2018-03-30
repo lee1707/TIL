@@ -5,8 +5,9 @@
 
 I practiced some examples from the JSP&Servelt book.
 
+
 -RequestWrapper class should contain getParameter method, getParameterValues method, and getParameterMap.
-because servlet class and JSP page use all these three method when they get <FORM> data.
+because servlet class and JSP page use all these three method when they get ```<FORM>``` data.
 
 -ResponseWrapper class uses cookie to prove they really changes some datas from web browers.
 
