@@ -36,7 +36,7 @@ and made log4j.properties file on C:\Users\gramgram\Downloads\apache-tomcat-9.0.
 
 I tried 
 ===========
-**log4j.properties**
+creating **log4j.properties** file.
 
 ```
 log4j.rootLogger=DEBUG, stdout, TOMCAT
