@@ -1,6 +1,7 @@
 # Today I learned
 
 I went seminar today. It held at Ebrain(seonjeongleung, Seoul, Korea).
+
 I learned **uftrace**(opensource) and how to use github(and sourcetree)
 also Emoji :smile:
 
@@ -46,10 +47,12 @@ Lecturer also told us there are many great lecture held by The Linux Foundation.
 [Linux Foundation](http://www.linuxfoundation.org)
 
 He said **The main points of opensource are review and debate** 
+
 He told us to look at **Todo** and **contributing.md** at opensouce link above(uftrace).
 
 # github
 Junyoung was lecturer. :thumbsup:
+
 I learned how to create branch and merge in sourcetree.
 
 It was training lectruer. We spend time to follow his lectruer and learned a lot. 
