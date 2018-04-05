@@ -1,6 +1,8 @@
 # Today I learned
 html, Javascript
 
+WebTemplate.jsp
+-------------
 ```
 <%@page contentType="text/html; charset=UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -41,7 +43,8 @@ html, Javascript
 </html>
 ```
 
-
+attandance.jsp
+--------------
 ```
 <%@page contentType="text/html; charset=UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
