@@ -15,8 +15,9 @@ https://github.com/lee1707/TIL/blob/master/java/web/Jsp%26Servlet%20WebTemplate.
 - 03/04/18 [SQL Syntax Error and Sourcetree Error](https://github.com/lee1707/TIL/blob/master/java/web/Jsp-Servlet/%20SQL%20Syntax%20Error%20and%20Sourcetree%20Error.md)
 
 # Html, CSS, Javascript
-- 05/04/18 [attendance checker html& javascript](https://github.com/lee1707/TIL/blob/master/java/web/Jsp-Servlet/attendance%20checker/html%20%26%20javascrpt.md)
-- 06/04/18 [attendance checker bootstrap and html](https://github.com/lee1707/TIL/blob/master/java/web/Jsp-Servlet/attendance%20checker/bootstrap%20and%20html.md)
+**attendance checker**
+- 05/04/18 [html& javascript](https://github.com/lee1707/TIL/blob/master/java/web/Jsp-Servlet/attendance%20checker/html%20%26%20javascrpt.md)
+- 06/04/18 [bootstrap and html](https://github.com/lee1707/TIL/blob/master/java/web/Jsp-Servlet/attendance%20checker/bootstrap%20and%20html.md)
 
 # Spring Boot
 - 04/04/18 [spring boot start](https://github.com/lee1707/TIL/blob/master/java/web/spring%20boot/start.md)
