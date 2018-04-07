@@ -1,8 +1,7 @@
 # Today I learned
 ListIterator, html placeholder
 
-# ListIterator<T> it = list.listIterator();
-
+# ListIterator
 ```
 while (it.hasNext()) {
   T t = it.next();
