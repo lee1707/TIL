@@ -1,5 +1,5 @@
 # Today I learned
-layered architecture
+How to create layered architecture, especially controller
 
 # Layered Architecture
 (=  Hierarchical Architecture)
