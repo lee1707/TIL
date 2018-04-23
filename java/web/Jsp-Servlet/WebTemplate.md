@@ -1,5 +1,5 @@
 # Today I learned
-Today I learned Web Templeate 1,2.
+Today I learned Web Templeate 1,2..
 
 * **GET/POST method <br>**
  GET : mainly to **read** <br>
