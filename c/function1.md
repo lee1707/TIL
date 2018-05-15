@@ -46,3 +46,50 @@ int main()
 }
 
 ```
+
+- Question2
+알수없는 부분
+```
+#include <stdio.h>
+
+using namespace std;
+
+void input(int &x, int &y)
+{
+    int tmp;
+
+    scanf("%d %d",&x,&y);
+
+    if(x<y){
+        tmp = x;
+        x = y;
+        y = tmp;
+    }
+}
+
+
+void output(int x, int y)
+{
+    int i,j;
+
+     for(i=y; i<=x; i++){
+     /*왜 i++는 동작하지 않는가 */
+        printf("== %ddan ==\n",y);
+        for(j=1; j<10; j++){
+            printf("%d * %d = %2d\n",y,j,y*j);
+        }
+        y+=1;
+        printf("\n");
+    }
+}
+int main()
+{
+    int a, b;
+
+    input(a,b);
+    output(a,b);
+
+    return 0;
+}
+
+```
