@@ -1,5 +1,5 @@
 # Today I learned
-discovery algorithm
+**discovery algorithm**
 
 ```
 흑적 트리
