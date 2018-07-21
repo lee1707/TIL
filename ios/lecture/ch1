@@ -1,0 +1,112 @@
+Model ; What your applications is
+controller ; how your model is presented to the user(UI logic)
+view; your controllers minions(label, button등)
+
+con->model 완전히 통제함, 사용자에게 모델에 있는 것을 표현
+	/사용자로부터 정보를 받아 모델을 업데이트함
+con-> view outlet을 통해 이루어짐
+	
+view->con view의 미니언들이 모두 일반화 되어이는 객체임
+	view는 con에 대해 잘 모르고 제한적임
+	이 소통은 blind이고(잘모르기때문) 구조화되야함
+	(아는바가 없기 때문에 제대로 미리 서술되어있는 방식으로 대화해야)
+	1) target action
+	con이 자기 자신에 타겟판을 걸어놓음 @IBAction으로 메소드 정의
+	XCode안에 작은 점이 생김
+	view가 con과 이야기 하고 싶을때 그 메소드 호출(control+드래그)
+	2)delegate(위임)
+	should, will, did(ex: should I allow this)을 물어봄
+	delegate는 view안의 프로퍼티임
+	프로퍼티는 클래스에 속하는게 아니라 protocol. 
+	protocol은 다른녀석이 대신 실행하기로
+	약속된 메소드를 모아놓은 설명임
+	view는 그 클래스가 먼지 모르더라도 con과 얘기가능
+	3)data에 대해 물어보는데 delegate가 아니라 datasource라 부름
+	**view는 자기가 보여주는 데이터를 소유할 수 없음
+	con에게 계속 물어봄
+
+model->con  con은 UI로직을 다루고 model는 UI 독립적이라 X
+		UI와는 상관없는 모델이 값이 바뀌는 데이터를 가지고 있따면?
+		-> 1) 라디오 방송국 모델을 사용
+		model은 라디오 방송국을 사용, model에 대해 	
+		궁금해 하는 것은 그걸 다 들을 수 있음
+		model이 방송하는 것은 UI가 아니라 데이터에 대한 것임
+		라디오 방송국은 모델과 컨트롤러 사이가 아닌데도 적용 가능하나
+		view에서 할수는 x
+		model에 채널을 고정한 건 con이고  
+		con은 데이터를 화면에 보여주기 위해
+		일반화 되어있는 뷰를 설정
+**MVC를 다른 MVC의 뷰 일부로 생각해야함
+
+displayValue : double
+	이 변수는 자동으로 디스플레이 안에 뭐가 잇엇는지 추적/
+	변수의 값을 가지면 디스플레이가 double일때의 값임
+
+<계산기를만들어보자4>
+property : 인스턴스 변수 같은것
+\() : 출력하길 원하는걸 여기에 넣어줄 수 있음
+	ex) print("\(digit)")
+let : 지역변수 선언or초기화 되고 값이 변하지 않을 property 선언시,
+	즉 상수일경우
+	Array나 Dictionary의 경우에는 어떤 값도 추가로 들어가거나
+	빼낼수 없는, 즉 읽기만 가능한 경우를 만드는 방법이기도 함
+optional : type이름
+	두가지 값만 가짐 1) not set = nil(항상 이걸로 초기화됨)
+		           2) set -> associated value가 있음
+	ex) var currentTitle: String? { get }
+		-> associated값이 String타입인 Optional이라는 뜻
+		-> optional String이라고 부름
+		->optional 타입 바깥으로 값을 가져오려면 
+			선언 끝부분에 느낌표를 붙이면됨
+			강제적으로 연결값을 가져오게됨
+		ex) let digit = sender.currentTitle!
+		not set일 경우에 !을 하면 에러가 되지만
+		앱을 만들땐 그게 고치는데에 도움이 됨
+outlet: method가 아니라 property를 만드는 것
+: 뒤에 있는게 타입 이름
+swift에서 모든 property는 초기값을 가져야함, optional은 예외.
+강제적 추출 옵셔널 ; 선언하는 곳에 !를 넣어주면 누구든 이 값을 
+	자유롭게 쓸수있고 자동으로 값을 추출해줌
+
+dictionary : swift문법임, generic type임
+	ex) Dictionary<String, Double>[ ]
+property가 저장만 되는 것이 아니라 연산도 될 수 있다
+internal은 module안에서 공개된 것, pubic은다른 module에 있는
+	모든 사람에게도 공개된 것
+
+enum: 별개의 값을 모아놓은 세트, 서로 구별되는 값을 가지고 있음
+	메소드를 가질 수는 있지만 변수를 가질수는 없음
+	계산변수는 가질 수 있지만 저장 변수는 가질수 x
+	상속하거나 받을 수 x
+	값으로 전달됨
+
+	
+
+
+
+
+Cocoa Touch : UI층 (UIKit. 버튼, 슬라이더 등이 있는 ios프레임워크)
+Media
+Core Services : 하위 서비스들의 최상위에 있는 객체지향 층
+Core Os : Unix(C언어 기반)
+
+Outlet
+Action 
+: 버튼을 눌렀을 때 메소드를 호출하라
+OutletAction
+
+1)모든 인수에는 이름이 있음
+2)메소드를 부를 때 이 이름을 포함해야 함. 이름이 두개임
+	하나는 호출할때 쓰는것, 하나는 코드 구현에 사용하는
+	내부의 이름
+property는 인스턴스 변수라는 뜻. property엔 초기값이 항상 있어야.
+
+
+
+
+
+
+
+
+
+
